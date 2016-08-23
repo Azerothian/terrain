@@ -1,0 +1,13 @@
+{
+  "presets": ["stage-0", "es2015", "react"],
+  "plugins": [
+    ["module-alias", [
+      { "src": "./src/utils", "expose": "utils" },
+      { "src": "./src/", "expose": "app" }
+    ]],
+    "typecheck",
+    "syntax-flow",
+    "transform-flow-strip-types"
+  ],
+  "ignore": []
+}

@@ -45,15 +45,7 @@ function generatePoints(n, extent) {
     return pts;
 }
 
-function centroid(pts) {
-    var x = 0;
-    var y = 0;
-    for (var i = 0; i < pts.length; i++) {
-        x += pts[i][0];
-        y += pts[i][1];
-    }
-    return [x/pts.length, y/pts.length];
-}
+
 
 function improvePoints(pts, n, extent) {
     n = n || 1;
